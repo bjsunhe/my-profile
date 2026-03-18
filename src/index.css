@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply text-gray-900 font-sans;
+    overflow-x: hidden;
+    /* Global subtle warm gradient background */
+    background: 
+      linear-gradient(180deg, 
+        #f5f3ff 0%,          /* violet-50 tint */
+        #ffffff 15%,
+        #f9fafb 35%,
+        #ffffff 50%,
+        #f0f9ff 65%,         /* sky-50 tint */
+        #ffffff 80%,
+        #f5f3ff 92%,         /* violet-50 tint */
+        #1e1b4b 92%,         /* dark section start */
+        #1e1b4b 100%
+      );
+  }
+
+  ::selection {
+    @apply bg-primary-100 text-primary-900;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  #root {
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .max-container {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .gradient-text-cyan {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+
+  .gradient-text-emerald {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500;
+  }
+
+  .gradient-text-amber {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-500;
+  }
+
+  .gradient-text-rose {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-500;
+  }
+
+  .gradient-text-violet {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-purple-500;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-gray-200/60 rounded-2xl;
+  }
+
+  /* Keyword highlight styles */
+  .keyword-primary {
+    @apply text-primary font-semibold;
+  }
+
+  .keyword-cyan {
+    @apply text-cyan-600 font-semibold;
+  }
+
+  .keyword-emerald {
+    @apply text-emerald-600 font-semibold;
+  }
+
+  .keyword-amber {
+    @apply text-amber-600 font-semibold;
+  }
+
+  .keyword-rose {
+    @apply text-rose-600 font-semibold;
+  }
+
+  .keyword-violet {
+    @apply text-violet-600 font-semibold;
+  }
+
+  /* Keyword with subtle background pill */
+  .keyword-pill {
+    @apply px-1.5 py-0.5 rounded-md font-semibold;
+  }
+
+  .keyword-pill-primary {
+    @apply keyword-pill bg-primary-50 text-primary-700;
+  }
+
+  .keyword-pill-cyan {
+    @apply keyword-pill bg-cyan-50 text-cyan-700;
+  }
+
+  .keyword-pill-emerald {
+    @apply keyword-pill bg-emerald-50 text-emerald-700;
+  }
+
+  .keyword-pill-amber {
+    @apply keyword-pill bg-amber-50 text-amber-700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
