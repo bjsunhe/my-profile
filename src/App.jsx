@@ -26,7 +26,7 @@ function App() {
         <ProfileSection />
         <ExecutionIntro />
         <ExecutionSection />
-        <ValueSection />
+        {/* <ValueSection /> */}
         <BeliefSection />
         <ContactSection />
       </main>

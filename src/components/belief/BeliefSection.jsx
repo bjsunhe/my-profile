@@ -1,3 +1,4 @@
+// src/components/belief/BeliefSection.jsx
 import { motion } from 'framer-motion'
 import SectionWrapper from '../common/SectionWrapper'
 import BeforeAfterRow from './BeforeAfterRow'
@@ -69,34 +70,27 @@ export default function BeliefSection() {
         ))}
       </motion.div>
 
-      {/* Closing Statement with colored keywords */}
+      {/* Closing Statement */}
       <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        className="max-w-3xl"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        <motion.div
-          variants={fadeInUp}
-          className="relative pl-6 border-l-4 border-gradient-to-b from-primary via-violet-500 to-cyan-500"
-          style={{
-            borderImage: 'linear-gradient(to bottom, #4f46e5, #8b5cf6, #06b6d4) 1',
-          }}
-        >
-          <p className="text-lg sm:text-xl text-gray-500 mb-2">
-            The future of work is not humans <span className="keyword-rose">OR</span> AI.
-          </p>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 leading-snug mb-2">
-            It's <span className="keyword-emerald">humans</span>{' '}
-            <span className="keyword-primary">AND</span>{' '}
-            <span className="keyword-cyan">AI agents</span> collaborating —
-          </p>
-          <p className="text-lg sm:text-xl text-gray-500">
-            and many routine steps simply{' '}
-            <span className="keyword-violet">disappearing</span>.
-          </p>
-        </motion.div>
+        <p className="text-xl sm:text-2xl lg:text-3xl font-bold leading-snug">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-violet-500 to-cyan-500">
+            Digital department
+          </span>
+          <span className="text-gray-900"> becomes a </span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-500">
+            strategic driver
+          </span>
+          <span className="text-gray-900"> of </span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">
+            enterprise transformation
+          </span>
+          <span className="text-gray-900">.</span>
+        </p>
       </motion.div>
     </SectionWrapper>
   )

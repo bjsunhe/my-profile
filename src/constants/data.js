@@ -149,7 +149,7 @@ export const EXECUTION = {
         quoteAuthor: 'G7 Response',
         stat: {
           value: '< 2 months',
-          label: 'From new AI model release to MVP',
+          label: 'From new AI model release to MVP to Management Approval',
         },
       },
     },
