@@ -37,11 +37,11 @@ export default function ExecutionSection() {
             insight={timeline[0].content.insight}
             insightHighlight={timeline[0].content.insightHighlight}
           />
-          <PainPointCard
+          {/* <PainPointCard
             title={timeline[0].content.painPoint.title}
             description={timeline[0].content.painPoint.description}
             stats={timeline[0].content.painPoint.stats}
-          />
+          /> */}
           <CodeBlock
             intro={timeline[0].content.build.intro}
             description={timeline[0].content.build.description}

@@ -103,9 +103,9 @@ export const EXECUTION = {
         insightHighlight:
           'Vision capability at that level means enterprise document workflows can be fundamentally redesigned.',
         painPoint: {
-          title: 'Packaging Spec Management',
+          title: 'Logistic Document Management',
           description:
-            'Every time a supplier changed packaging specs, someone had to open a PDF, read it, extract data manually, and update SAP material masters.',
+            'Every time a supplier deliver logistic documents, someone had to open a PDF, read it, extract data manually, and update SAP material masters.',
           stats: ['Thousands of documents', 'Hundreds of hours', 'High error rates'],
         },
         build: {
