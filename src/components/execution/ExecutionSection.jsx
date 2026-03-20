@@ -1,28 +1,20 @@
+// src/components/execution/ExecutionSection.jsx
 import { motion } from 'framer-motion'
 import SectionWrapper from '../common/SectionWrapper'
-import SectionHeader from '../common/SectionHeader'
 import { fadeInUp } from '../../utils/animations'
 import { EXECUTION } from '../../constants/data'
 import TimelineEvent from './TimelineEvent'
 import InflectionPoint from './InflectionPoint'
-import PainPointCard from './PainPointCard'
 import CodeBlock from './CodeBlock'
 import SavingsCounter from './SavingsCounter'
 import G7Quote from './G7Quote'
-import RepeatablePattern from './RepeatablePattern'
 import OtherProjects from './OtherProjects'
 
 export default function ExecutionSection() {
-  const { timeline, pattern, otherProjects, closingNote } = EXECUTION
+  const { timeline, otherProjects, closingNote } = EXECUTION
 
   return (
     <SectionWrapper id="execution" background="transparent">
-      <SectionHeader
-        label={EXECUTION.sectionLabel}
-        title={EXECUTION.title}
-        subtitle={EXECUTION.subtitle}
-      />
-
       {/* Timeline */}
       <div className="relative">
         <TimelineLine />
@@ -37,11 +29,6 @@ export default function ExecutionSection() {
             insight={timeline[0].content.insight}
             insightHighlight={timeline[0].content.insightHighlight}
           />
-          {/* <PainPointCard
-            title={timeline[0].content.painPoint.title}
-            description={timeline[0].content.painPoint.description}
-            stats={timeline[0].content.painPoint.stats}
-          /> */}
           <CodeBlock
             intro={timeline[0].content.build.intro}
             description={timeline[0].content.build.description}
@@ -75,15 +62,14 @@ export default function ExecutionSection() {
         </TimelineEvent>
       </div>
 
-      <motion.div variants={fadeInUp} className="mt-20 sm:mt-28">
-        <RepeatablePattern
-          title={pattern.title}
-          description={pattern.description}
-          steps={pattern.steps}
-        />
-      </motion.div>
-
-      <motion.div variants={fadeInUp} className="mt-16 sm:mt-20">
+      {/* Other Projects — use whileInView to ensure it animates independently */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+        className="mt-16 sm:mt-20"
+      >
         <OtherProjects
           projects={otherProjects}
           closingNote={closingNote}

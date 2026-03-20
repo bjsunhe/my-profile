@@ -15,11 +15,11 @@ export default function InflectionPoint({ context, insight, insightHighlight }) 
         <p className="text-base text-gray-500 mb-2">
           {insight}
         </p>
-        <p className="text-base sm:text-lg font-semibold text-gray-800 leading-relaxed">
+        {/* <p className="text-base sm:text-lg font-semibold text-gray-800 leading-relaxed">
           <span className="keyword-cyan">Vision capability</span> at that level means{' '}
           <span className="keyword-primary">enterprise document workflows</span> can be{' '}
           <span className="keyword-emerald">fundamentally redesigned</span>.
-        </p>
+        </p> */}
       </div>
     </motion.div>
   )

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import QuotesIntroSection from './components/QuotesIntroSection'
 import HeroSection from './components/HeroSection'
 import ProfileSection from './components/profile/ProfileSection'
+import ExecutionIntro from './components/execution/ExecutionIntro'
 import ExecutionSection from './components/execution/ExecutionSection'
 import ValueSection from './components/value/ValueSection'
 import BeliefSection from './components/belief/BeliefSection'
@@ -23,6 +24,7 @@ function App() {
         <QuotesIntroSection />
         <HeroSection />
         <ProfileSection />
+        <ExecutionIntro />
         <ExecutionSection />
         <ValueSection />
         <BeliefSection />

@@ -22,7 +22,7 @@ export const HERO = {
 
 export const PROFILE = {
   sectionLabel: 'WHO I AM',
-  title: 'Not an Order-Taker',
+  title: 'AI-Native Business Process Designer · Zero-to-One Builder',
   quote:
     'I co-define the business outcome with stakeholders, redesign the business process in an AI-native way, and drive delivery all the way to production.',
   education: [
@@ -43,7 +43,7 @@ export const PROFILE = {
     emoji: '🏢',
     title: 'Junior Manager Program (JMP) → AI & Automation Solution Architect',
     company: '6 Years at Bosch',
-    tags: ['Solution Design', 'Project Delivery', 'Global Teams'],
+    tags: ['CR', 'PS', 'BMG'],
   },
   entrepreneurship: {
     emoji: '🚀',
@@ -52,11 +52,11 @@ export const PROFILE = {
     tag: 'Zero-to-one',
   },
   competencies: [
-    {
-      icon: 'CpuChipIcon',
-      title: 'AI Solution Architecture',
-      description: 'End-to-end design of AI Solutions from concept to production deployment',
-    },
+    // {
+    //   icon: 'CpuChipIcon',
+    //   title: 'AI Solution Architecture',
+    //   description: 'End-to-end design of AI Solutions from concept to production deployment',
+    // },
     {
       icon: 'ArrowPathIcon',
       title: 'AI-Native Business Process Redesign',
@@ -67,21 +67,21 @@ export const PROFILE = {
       title: 'SAP Ecosystem',
       description: 'S/4HANA, SAP BTP, SAP AI Hub — deep expertise across the full SAP technology stack',
     },
-    {
-      icon: 'UserGroupIcon',
-      title: 'Stakeholder Management',
-      description: 'Executive communication and cross-functional alignment from C-suite to engineering',
-    },
+    // {
+    //   icon: 'UserGroupIcon',
+    //   title: 'Stakeholder Management',
+    //   description: 'Executive communication and cross-functional alignment from C-suite to engineering',
+    // },
     {
       icon: 'BoltIcon',
       title: 'Rapid Prototyping & MVP',
       description: 'From idea to working prototype in days',
     },
-    {
-      icon: 'GlobeAltIcon',
-      title: 'Global Delivery',
-      description: 'Cross-cultural collaboration across APAC, EMEA with distributed teams',
-    },
+    // {
+    //   icon: 'GlobeAltIcon',
+    //   title: 'Global Delivery',
+    //   description: 'Cross-cultural collaboration across APAC, EMEA with distributed teams',
+    // },
   ],
 }
 
@@ -99,9 +99,9 @@ export const EXECUTION = {
         context:
           'OpenAI released GPT-4o — capable of reasoning across text and vision in real time.',
         insight:
-          'Many people saw a better chatbot. I saw something else:',
+          '',
         insightHighlight:
-          'Vision capability at that level means enterprise document workflows can be fundamentally redesigned.',
+          '',
         painPoint: {
           title: 'Logistic Document Management',
           description:
@@ -109,8 +109,8 @@ export const EXECUTION = {
           stats: ['Thousands of documents', 'Hundreds of hours', 'High error rates'],
         },
         build: {
-          intro: 'Personal initiative, zero budget',
-          description: 'I went home, opened my laptop, and built it.',
+          intro: '',
+          description: 'Personal initiative, zero budget',
           pipeline: [
             '// Pipeline',
             'PDFs → images',
@@ -169,13 +169,13 @@ export const EXECUTION = {
 
   otherProjects: [
     {
-      metric: 80,
+      metric: 50,
       suffix: '%',
       label: 'Master data effort reduction',
       description: 'Multi-agent system · SAP integration',
     },
     {
-      metric: 50,
+      metric: 30,
       suffix: '%',
       label: 'Query accuracy improvement',
       description: 'RAG-based chatbot · Enterprise knowledge',
