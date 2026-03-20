@@ -53,66 +53,64 @@ export default function QuotesIntroSection() {
   }
 
   return (
-    <motion.section
-      id="quotes-intro"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ opacity, scale }}
-    >
-      <QuoteBackground />
-
-      <FloatingIcon Icon={CpuChipIcon} left="6%" top="10%" size={28} dur={18} delay={0} />
-      <FloatingIcon Icon={CubeTransparentIcon} left="88%" top="7%" size={32} dur={22} delay={1} />
-      <FloatingIcon Icon={CircleStackIcon} left="93%" top="42%" size={24} dur={16} delay={3} />
-      <FloatingIcon Icon={CommandLineIcon} left="4%" top="52%" size={28} dur={20} delay={2} />
-      <FloatingIcon Icon={BoltIcon} left="14%" top="82%" size={24} dur={17} delay={4} />
-      <FloatingIcon Icon={SparklesIcon} left="82%" top="78%" size={28} dur={19} delay={1.5} />
-      <FloatingIcon Icon={GlobeAltIcon} left="44%" top="4%" size={24} dur={21} delay={2.5} />
-      <FloatingIcon Icon={SignalIcon} left="74%" top="18%" size={22} dur={15} delay={3.5} />
-      <FloatingIcon Icon={CloudIcon} left="22%" top="15%" size={30} dur={23} delay={0.5} />
-      <FloatingIcon Icon={CogIcon} left="91%" top="68%" size={26} dur={18} delay={4.5} />
-      <FloatingIcon Icon={LightBulbIcon} left="30%" top="88%" size={24} dur={20} delay={1.8} />
-      <FloatingIcon Icon={RocketLaunchIcon} left="64%" top="90%" size={28} dur={16} delay={3.2} />
-      <FloatingIcon Icon={BeakerIcon} left="54%" top="10%" size={22} dur={24} delay={5} />
-      <FloatingIcon Icon={WrenchScrewdriverIcon} left="38%" top="70%" size={24} dur={19} delay={2.8} />
-      <FloatingIcon Icon={ShareIcon} left="10%" top="36%" size={26} dur={21} delay={0.8} />
-      <FloatingIcon Icon={ServerIcon} left="68%" top="50%" size={22} dur={17} delay={3.8} />
-
-      <motion.div
-        className="relative z-20 w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 py-16 text-center"
-        variants={staggerContainer}
-        initial="hidden"
-        animate="visible"
+    <div className="relative" style={{ backgroundColor: '#faf8ff' }}>
+      <motion.section
+        id="quotes-intro"
+        className="relative min-h-screen flex flex-col overflow-hidden"
+        style={{ opacity, scale }}
       >
-        <motion.blockquote
-          variants={fadeInUp}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.25] tracking-tight text-gray-900 max-w-4xl mx-auto"
-        >
-          <span className="text-gray-900">
-            If I had asked people what they wanted,
-          </span>
-          <br className="hidden sm:block" />{' '}
-          <span className="text-gray-900">they would have said </span>
-          <span
-            className="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 animate-gradient-shift"
-            style={{ backgroundSize: '200% 200%' }}
-          >
-            faster horses
-          </span>
-          <span className="text-gray-900">.</span>
-        </motion.blockquote>
+        <QuoteBackground />
 
+        <FloatingIcon Icon={CpuChipIcon} left="6%" top="10%" size={28} dur={18} delay={0} />
+        <FloatingIcon Icon={CubeTransparentIcon} left="88%" top="7%" size={32} dur={22} delay={1} />
+        <FloatingIcon Icon={CircleStackIcon} left="93%" top="42%" size={24} dur={16} delay={3} />
+        <FloatingIcon Icon={CommandLineIcon} left="4%" top="52%" size={28} dur={20} delay={2} />
+        <FloatingIcon Icon={BoltIcon} left="14%" top="82%" size={24} dur={17} delay={4} />
+        <FloatingIcon Icon={SparklesIcon} left="82%" top="78%" size={28} dur={19} delay={1.5} />
+        <FloatingIcon Icon={GlobeAltIcon} left="44%" top="4%" size={24} dur={21} delay={2.5} />
+        <FloatingIcon Icon={SignalIcon} left="74%" top="18%" size={22} dur={15} delay={3.5} />
+        <FloatingIcon Icon={CloudIcon} left="22%" top="15%" size={30} dur={23} delay={0.5} />
+        <FloatingIcon Icon={CogIcon} left="91%" top="68%" size={26} dur={18} delay={4.5} />
+        <FloatingIcon Icon={LightBulbIcon} left="30%" top="88%" size={24} dur={20} delay={1.8} />
+        <FloatingIcon Icon={RocketLaunchIcon} left="64%" top="90%" size={28} dur={16} delay={3.2} />
+        <FloatingIcon Icon={BeakerIcon} left="54%" top="10%" size={22} dur={24} delay={5} />
+        <FloatingIcon Icon={WrenchScrewdriverIcon} left="38%" top="70%" size={24} dur={19} delay={2.8} />
+        <FloatingIcon Icon={ShareIcon} left="10%" top="36%" size={26} dur={21} delay={0.8} />
+        <FloatingIcon Icon={ServerIcon} left="68%" top="50%" size={22} dur={17} delay={3.8} />
+
+        {/* Quote — vertically centered */}
         <motion.div
-          variants={fadeInUp}
-          className="mt-8 sm:mt-10 flex items-center justify-center gap-3"
+          className="relative z-20 flex-1 flex items-center justify-center w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12"
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
         >
-          <div className="h-px w-10 bg-gradient-to-r from-transparent to-primary-300/50" />
-          <span className="text-base sm:text-lg text-gray-400 font-medium tracking-wide">
-            — Henry Ford
-          </span>
-          <div className="h-px w-10 bg-gradient-to-l from-transparent to-primary-300/50" />
+          <motion.blockquote
+            variants={fadeInUp}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.25] tracking-tight text-gray-900 max-w-4xl mx-auto text-center"
+          >
+            <span className="text-gray-900">
+              If I had asked people what they wanted,
+            </span>
+            <br className="hidden sm:block" />{' '}
+            <span className="text-gray-900">they would have said </span>
+            <span
+              className="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 animate-gradient-shift"
+              style={{ backgroundSize: '200% 200%' }}
+            >
+              faster horses
+            </span>
+            <span className="text-gray-900">.</span>
+          </motion.blockquote>
         </motion.div>
 
-        <motion.div variants={fadeInUp} className="mt-20 sm:mt-28">
+        {/* Scroll indicator — pinned to bottom */}
+        <motion.div
+          className="relative z-20 pb-8 sm:pb-12 flex justify-center"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+        >
           <button
             onClick={handleScrollDown}
             className="group inline-flex flex-col items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
@@ -133,8 +131,8 @@ export default function QuotesIntroSection() {
             </motion.div>
           </button>
         </motion.div>
-      </motion.div>
-    </motion.section>
+      </motion.section>
+    </div>
   )
 }
 
@@ -168,7 +166,6 @@ function FloatingIcon({ Icon, left, top, size, dur, delay }) {
 function QuoteBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Base gradient — no amber/yellow, cool violet tint throughout */}
       <div
         className="absolute inset-0"
         style={{
@@ -182,7 +179,6 @@ function QuoteBackground() {
         }}
       />
 
-      {/* Grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.025]"
         style={{
@@ -194,7 +190,6 @@ function QuoteBackground() {
         }}
       />
 
-      {/* Floating orb — top left (violet, replaces amber) */}
       <motion.div
         className="absolute -top-20 left-[5%] w-[500px] h-[500px] rounded-full"
         style={{
@@ -210,7 +205,6 @@ function QuoteBackground() {
         transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* Floating orb — right center (violet) */}
       <motion.div
         className="absolute top-[35%] -right-20 w-[450px] h-[450px] rounded-full"
         style={{
@@ -230,7 +224,6 @@ function QuoteBackground() {
         }}
       />
 
-      {/* Floating orb — bottom center (cyan) */}
       <motion.div
         className="absolute bottom-[5%] left-[30%] w-[400px] h-[400px] rounded-full"
         style={{
@@ -250,7 +243,6 @@ function QuoteBackground() {
         }}
       />
 
-      {/* Center glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full"
         style={{

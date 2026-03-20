@@ -242,7 +242,7 @@ export const BELIEF = {
 }
 
 export const CONTACT = {
-  sectionLabel: 'CLOSING',
+  sectionLabel: 'NEXT',
   lines: [
     { text: 'Ford saw beyond', emphasis: false },
     { text: 'faster horses.', emphasis: true },

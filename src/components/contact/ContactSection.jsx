@@ -39,12 +39,12 @@ export default function ContactSection() {
           className="mb-12 sm:mb-16"
         >
           {/* Ford */}
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-1">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-medium text-gray-400">
               Ford saw beyond
             </p>
           </motion.div>
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-1">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-400">
                 faster horses.
@@ -56,24 +56,28 @@ export default function ContactSection() {
           <motion.div variants={fadeInUp} className="h-4 sm:h-6" />
 
           {/* Jobs */}
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-1">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-medium text-gray-400">
               Jobs stood at the
             </p>
           </motion.div>
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-1">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-violet-400 to-cyan-400">
                 intersection
               </span>
             </p>
           </motion.div>
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-2">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-medium text-gray-400">
-              of technology and
+              of{' '}
+              <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">
+                technology
+              </span>
+              {' '}and
             </p>
           </motion.div>
-          <motion.div variants={fadeInUp} className="overflow-hidden">
+          <motion.div variants={fadeInUp} className="overflow-hidden pb-1">
             <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-tight font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400">
                 the liberal arts.
