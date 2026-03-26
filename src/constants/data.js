@@ -59,7 +59,7 @@ export const PROFILE = {
     // },
     {
       icon: 'ArrowPathIcon',
-      title: 'AI-Native Business Process Redesign',
+      title: 'AI-Native Business Process Design',
       description: 'Transforming workflows to AI-Native Business Process',
     },
     {
