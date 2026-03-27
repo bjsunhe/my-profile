@@ -115,7 +115,7 @@ export const EXECUTION = {
             '// Pipeline',
             'PDFs → images',
             'images → GPT-4o vision → structured JSON',
-            'JSON → mapped to SAP material master',
+            'JSON → mapped to SAP',
             '',
             '✓ Working prototype.',
           ],
