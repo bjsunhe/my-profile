@@ -1,5 +1,5 @@
 // src/components/QuotesIntroSection.jsx
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import {
   CpuChipIcon,
@@ -41,10 +41,6 @@ const fadeInUp = {
 }
 
 export default function QuotesIntroSection() {
-  const { scrollYProgress } = useScroll()
-  const opacity = useTransform(scrollYProgress, [0, 0.08], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.08], [1, 0.96])
-
   const handleScrollDown = () => {
     const heroSection = document.getElementById('hero')
     if (heroSection) {
@@ -54,10 +50,9 @@ export default function QuotesIntroSection() {
 
   return (
     <div className="relative" style={{ backgroundColor: '#faf8ff' }}>
-      <motion.section
+      <section
         id="quotes-intro"
         className="relative min-h-screen flex flex-col overflow-hidden"
-        style={{ opacity, scale }}
       >
         <QuoteBackground />
 
@@ -131,7 +126,7 @@ export default function QuotesIntroSection() {
             </motion.div>
           </button>
         </motion.div>
-      </motion.section>
+      </section>
     </div>
   )
 }

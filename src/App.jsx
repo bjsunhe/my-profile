@@ -21,12 +21,13 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <main>
-        <QuotesIntroSection />
-        <BeliefSection />
         <ProfileSection />
+
         <ExecutionIntro />
         <ExecutionSection />
         {/* <ValueSection /> */}
+        <QuotesIntroSection />
+        <BeliefSection />
         <HeroSection />
         <ContactSection />
       </main>
