@@ -75,7 +75,7 @@ export default function QuotesIntroSection() {
 
         {/* Quote — vertically centered */}
         <motion.div
-          className="relative z-20 flex-1 flex items-center justify-center w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12"
+          className="relative z-20 flex-1 flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
@@ -97,6 +97,18 @@ export default function QuotesIntroSection() {
             </span>
             <span className="text-gray-900">.</span>
           </motion.blockquote>
+
+          {/* Attribution */}
+          <motion.div
+            variants={fadeInUp}
+            className="mt-6 sm:mt-8 flex items-center gap-3"
+          >
+            <div className="h-px w-8 bg-gradient-to-r from-transparent to-gray-300" />
+            <p className="text-base sm:text-lg text-gray-400 font-medium tracking-wide">
+              Henry Ford
+            </p>
+            <div className="h-px w-8 bg-gradient-to-l from-transparent to-gray-300" />
+          </motion.div>
         </motion.div>
 
         {/* Scroll indicator — pinned to bottom */}
