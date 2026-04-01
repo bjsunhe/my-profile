@@ -87,7 +87,7 @@ export default function BeliefSection() {
           </span>
           <span className="text-gray-900"> of </span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">
-            enterprise transformation
+            business transformation
           </span>
           <span className="text-gray-900">.</span>
         </p>

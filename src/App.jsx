@@ -22,12 +22,12 @@ function App() {
       <Navbar />
       <main>
         <QuotesIntroSection />
-        <HeroSection />
+        <BeliefSection />
         <ProfileSection />
         <ExecutionIntro />
         <ExecutionSection />
         {/* <ValueSection /> */}
-        <BeliefSection />
+        <HeroSection />
         <ContactSection />
       </main>
     </div>
