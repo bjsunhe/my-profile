@@ -21,8 +21,8 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <main>
-        <QuotesIntroSection />
         <ProfileSection />
+        <QuotesIntroSection />
 
         <ExecutionIntro />
         <ExecutionSection />
